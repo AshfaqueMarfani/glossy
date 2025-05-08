@@ -1,0 +1,55 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products:skincare' %}" id="skincare-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Skincare
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="skincare-link">
+                <a href="{% url 'products:product_category' 'face_cleansers' %}" class="dropdown-item">Face Cleansers</a>
+                <a href="{% url 'products:product_category' 'serums' %}" class="dropdown-item">Serums &amp; Treatments</a>
+                <a href="{% url 'products:product_category' 'moisturizers' %}" class="dropdown-item">Moisturizers</a>
+                <a href="{% url 'products:product_category' 'masks' %}" class="dropdown-item">Masks</a>
+                <a href="{% url 'products:product_category' 'eye_care' %}" class="dropdown-item">Eye Care</a>
+                <a href="{% url 'products:product_category' 'lip_care' %}" class="dropdown-item">Lip Care</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products:makeup' %}" id="makeup-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Makeup
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="makeup-link">
+                <a href="{% url 'products:product_category' 'face' %}" class="dropdown-item">Face</a>
+                <a href="{% url 'products:product_category' 'eyes' %}" class="dropdown-item">Eyes</a>
+                <a href="{% url 'products:product_category' 'lips' %}" class="dropdown-item">Lips</a>
+                <a href="{% url 'products:product_category' 'cheeks' %}" class="dropdown-item">Cheeks</a>
+                <a href="{% url 'products:product_category' 'brushes' %}" class="dropdown-item">Brushes &amp; Tools</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products:body_hair' %}" id="body-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Body &amp; Hair
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="body-link">
+                <a href="{% url 'products:product_category' 'bath' %}" class="dropdown-item">Bath &amp; Shower</a>
+                <a href="{% url 'products:product_category' 'body_moisturizers' %}" class="dropdown-item">Body Moisturizers</a>
+                <a href="{% url 'products:product_category' 'hair' %}" class="dropdown-item">Haircare</a>
+                <a href="{% url 'products:product_category' 'fragrance' %}" class="dropdown-item">Fragrance</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products:special_offers' %}" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Offers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products:all_products' %}?sort=price&direction=asc" class="dropdown-item">Price (Low to High)</a>
+                <a href="{% url 'products:all_products' %}?sort=price&direction=desc" class="dropdown-item">Price (High to Low)</a>
+                <a href="{% url 'products:all_products' %}?sort=rating&direction=desc" class="dropdown-item">Best Rated</a>
+                <a href="{% url 'products:all_products' %}?is_featured=True" class="dropdown-item">Featured Products</a>
+                <a href="{% url 'products:all_products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,73 @@
+{% load static %}
+
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <!-- Shop Links -->
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="text-uppercase mb-4">Shop</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{% url 'products:product_category' 'face' %}" class="text-white text-decoration-none">Face Makeup</a></li>
+                    <li class="mb-2"><a href="{% url 'products:product_category' 'lips' %}" class="text-white text-decoration-none">Lip Products</a></li>
+                    <li class="mb-2"><a href="{% url 'products:product_category' 'eyes' %}" class="text-white text-decoration-none">Eye Makeup</a></li>
+                    <li class="mb-2"><a href="{% url 'products:product_category' 'cheeks' %}" class="text-white text-decoration-none">Cheek Products</a></li>
+                    <li class="mb-2"><a href="{% url 'products:product_category' 'skincare' %}" class="text-white text-decoration-none">Skincare</a></li>
+                    <li class="mb-2"><a href="{% url 'products:product_category' 'brushes' %}" class="text-white text-decoration-none">Brushes & Tools</a></li>
+                </ul>
+            </div>
+            
+            <!-- Customer Service -->
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="text-uppercase mb-4">Customer Service</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{% url 'pages:contact' %}" class="text-white text-decoration-none">Contact Us</a></li>
+                    <li class="mb-2"><a href="{% url 'pages:shipping_returns' %}" class="text-white text-decoration-none">Shipping & Returns</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Track Your Order</a></li>
+                </ul>
+            </div>
+            
+            <!-- Company Info -->
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="text-uppercase mb-4">Company</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{% url 'pages:about' %}" class="text-white text-decoration-none">About Us</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                    <li class="mb-2"><a href="{% url 'pages:privacy_policy' %}" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="{% url 'pages:terms' %}" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <!-- Newsletter and Social -->
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="text-uppercase mb-4">Stay Connected</h5>
+                <p>Subscribe to our newsletter for exclusive offers and beauty tips.</p>
+                <form class="mb-4">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-btn">
+                        <div class="input-group-append">
+                            <button class="btn btn-pink rounded-0" type="button" id="subscribe-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="social-links d-flex">
+                    <a href="#" class="text-white me-3 mr-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-3 mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white me-3 mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3 mr-3"><i class="fab fa-pinterest fa-lg"></i></a>
+                    <a href="#" class="text-white me-3 mr-3"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom footer -->
+        <div class="row mt-4 pt-4 border-top border-secondary">
+            <div class="col-md-6 col-12 text-center text-md-start">
+                <p class="mb-2">&copy; 2025 Glossy Cosmetics. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 col-12 text-center text-md-end">
+                <img src="{% static 'images/payment-methods.png' %}" alt="Payment Methods" class="payment-icons" style="max-height: 30px;">
+            </div>
+        </div>
+    </div>
+</footer>

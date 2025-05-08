@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-10 offset-md-1">
+            <h1 class="display-4 text-center my-5">About Glossy</h1>
+            
+            <div class="row mb-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="{% static 'images/about-us.jpg' %}" alt="Glossy Team" class="img-fluid rounded shadow-sm" onerror="this.src='{% static 'images/noimage.png' %}'">
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p class="lead">Founded in 2020, Glossy was born out of a passion for clean, effective cosmetics that celebrate natural beauty.</p>
+                    <p>Our founder, Emma Reynolds, was frustrated with the beauty industry's focus on covering up rather than enhancing natural features. With a background in cosmetic chemistry and a vision for more transparent beauty products, she created Glossy to offer high-quality cosmetics that are kind to skin and the planet.</p>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Our Values</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-leaf fa-3x text-success mb-3"></i>
+                                    <h4 class="card-title">Clean Beauty</h4>
+                                    <p class="card-text">We formulate without harmful chemicals, focusing on ingredients that nourish your skin while providing beautiful results.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-globe-americas fa-3x text-primary mb-3"></i>
+                                    <h4 class="card-title">Sustainability</h4>
+                                    <p class="card-text">From our recyclable packaging to our cruelty-free testing, we're committed to minimizing our environmental footprint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-heart fa-3x text-danger mb-3"></i>
+                                    <h4 class="card-title">Inclusivity</h4>
+                                    <p class="card-text">Beauty comes in all colors, shapes, and sizes. Our products are designed to celebrate diversity and enhance natural beauty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Our Commitment</h2>
+                    <p>At Glossy, we're committed to creating products that make you look and feel your best without compromising on ethics or quality. We believe that makeup should be a tool for self-expression and confidence, not a mask to hide behind.</p>
+                    <p>We promise:</p>
+                    <ul>
+                        <li>To use only clean, safe ingredients in all our products</li>
+                        <li>To never test on animals or use animal-derived ingredients</li>
+                        <li>To continuously improve our environmental practices</li>
+                        <li>To listen to our customers and evolve with their needs</li>
+                        <li>To be transparent about our ingredients and manufacturing processes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

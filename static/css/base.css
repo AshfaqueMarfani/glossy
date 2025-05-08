@@ -1,0 +1,288 @@
+/* General Styling */
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    padding-top: 164px;
+}
+
+/* Font Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.logo-font {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+/* Colors */
+.bg-pink {
+    background-color: #FF8BA7 !important;
+}
+
+.text-pink {
+    color: #FF8BA7 !important;
+}
+
+.bg-mint {
+    background-color: #C3F0CA !important;
+}
+
+.text-mint {
+    color: #C3F0CA !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+/* Header */
+.main-logo-link {
+    width: fit-content;
+}
+
+/* Buttons */
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.btn-pink {
+    background: #FF8BA7;
+    color: white;
+}
+
+.btn-outline-pink {
+    background: white;
+    color: #FF8BA7 !important;
+    border: 1px solid #FF8BA7;
+}
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
+.btn-pink:hover,
+.btn-pink:active,
+.btn-pink:focus {
+    background: #ff6886;
+    color: white;
+}
+
+.btn-outline-pink:hover,
+.btn-outline-pink:active,
+.btn-outline-pink:focus {
+    background: #FF8BA7;
+    color: white !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+/* Product Form */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Product Cards */
+.card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-footer {
+    background-color: white;
+    border-top: none;
+}
+
+.product-detail-container {
+    padding-top: 60px;
+}
+
+/* Toast Messages */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* Cart and Checkout */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* Allauth form formatting */
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: #6c757d;
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #FF8BA7;
+    border: 1px solid #FF8BA7;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
+    background-color: #ff6886;
+    border-color: #ff6886;
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+        padding-top: 116px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 180px;
+    }
+}

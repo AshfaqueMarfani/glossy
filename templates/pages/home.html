@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Glossy - Home{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="jumbotron bg-light p-5 rounded">
+        <h1 class="display-4">Welcome to Glossy</h1>
+        <p class="lead">Your one-stop shop for all things beautiful.</p>
+        <hr class="my-4">
+        <p>Explore our wide range of products and find the perfect item for you.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'products:all_products' %}" role="button">Shop Now</a>
+    </div>
+    
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h2 class="mb-4">Featured Categories</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Makeup</h5>
+                    <p class="card-text">Discover our premium makeup collection.</p>
+                    <a href="{% url 'products:all_products' %}?category=makeup" class="btn btn-outline-primary">View Category</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Skincare</h5>
+                    <p class="card-text">Pamper yourself with our skincare products.</p>
+                    <a href="{% url 'products:all_products' %}?category=skincare" class="btn btn-outline-primary">View Category</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hair Care</h5>
+                    <p class="card-text">Keep your hair healthy with our products.</p>
+                    <a href="{% url 'products:all_products' %}?category=hair" class="btn btn-outline-primary">View Category</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

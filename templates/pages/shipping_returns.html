@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-3">
+            <h2 class="logo-font">Shipping & Returns</h2>
+            <hr class="w-50 mb-5">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3>Shipping Policy</h3>
+            
+            <h4>Processing Time</h4>
+            <p>
+                All orders are processed within 1-2 business days. Orders placed on weekends or holidays will be processed on the next business day.
+            </p>
+            
+            <h4>Shipping Methods</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Shipping Method</th>
+                        <th>Estimated Delivery Time</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard Shipping</td>
+                        <td>3-5 business days</td>
+                        <td>Rs.5.99 (Free for orders over Rs.50)</td>
+                    </tr>
+                    <tr>
+                        <td>Express Shipping</td>
+                        <td>1-2 business days</td>
+                        <td>Rs.12.99</td>
+                    </tr>
+                    <tr>
+                        <td>International Shipping</td>
+                        <td>7-14 business days</td>
+                        <td>Starting at Rs.15.99</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h4>Tracking Information</h4>
+            <p>
+                You will receive a shipping confirmation email with tracking information once your order has been shipped. Please allow up to 24 hours for the tracking information to update in the carrier's system.
+            </p>
+            
+            <h4>International Orders</h4>
+            <p>
+                We ship to most international destinations. Please note that customs duties, taxes, and other fees may be charged by your country's customs authority and are the responsibility of the customer.
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <h3>Returns & Refunds</h3>
+            
+            <h4>Return Policy</h4>
+            <p>
+                We want you to be completely satisfied with your purchase. If you're not happy with your order, we offer a 30-day return policy from the date of delivery.
+            </p>
+            
+            <h4>Eligible Items</h4>
+            <p>
+                To be eligible for a return, your item must be:
+            </p>
+            <ul>
+                <li>Unused and in its original packaging</li>
+                <li>In the same condition you received it</li>
+                <li>Returned within 30 days of delivery</li>
+            </ul>
+            
+            <h4>Non-Returnable Items</h4>
+            <p>
+                For hygiene reasons, the following items cannot be returned once opened or used:
+            </p>
+            <ul>
+                <li>Lipsticks and lip products</li>
+                <li>Mascaras and eye products</li>
+                <li>Foundation and face products that come in contact with skin</li>
+                <li>Sale items marked as final sale</li>
+            </ul>
+            
+            <h4>Return Process</h4>
+            <ol>
+                <li>Contact customer service at returns@glossy.com to initiate your return</li>
+                <li>Fill out the return form included with your order</li>
+                <li>Package the items securely in their original packaging if possible</li>
+                <li>Ship the items to the address provided by customer service</li>
+            </ol>
+            
+            <h4>Refunds</h4>
+            <p>
+                Once we receive and inspect your return, we will notify you of the status of your refund. If approved, your refund will be processed within 3-5 business days, and a credit will automatically be applied to your original method of payment.
+            </p>
+            
+            <h4>Exchanges</h4>
+            <p>
+                If you need to exchange an item for a different size, color, or product, please return the original item for a refund and place a new order for the desired item.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

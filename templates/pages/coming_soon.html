@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ feature }} Coming Soon{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto text-center">
+            <h1 class="display-4 mb-4">Coming Soon</h1>
+            <div class="mb-4">
+                <img src="{% static 'images/coming-soon.png' %}" alt="Coming Soon" class="img-fluid" style="max-height: 300px;" 
+                     onerror="this.src='{% static 'images/placeholder.png' %}'; this.onerror='';">
+            </div>
+            <p class="lead mb-4">{{ feature }} is currently under development and will be available soon!</p>
+            <p class="mb-4">We're working hard to bring you the best experience. Please check back later.</p>
+            <a href="{% url 'pages:home' %}" class="btn btn-primary">Return to Homepage</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
